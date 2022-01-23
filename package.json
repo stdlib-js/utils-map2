@@ -1,0 +1,101 @@
+{
+  "name": "@stdlib/utils-map2",
+  "version": "0.0.0",
+  "description": "Apply a function to elements in two input arrays and assign the results to an output array.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "The Stdlib Authors",
+    "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+  },
+  "contributors": [
+    {
+      "name": "The Stdlib Authors",
+      "url": "https://github.com/stdlib-js/stdlib/graphs/contributors"
+    }
+  ],
+  "main": "./lib",
+  "directories": {
+    "benchmark": "./benchmark",
+    "doc": "./docs",
+    "example": "./examples",
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "types": "./docs/types",
+  "scripts": {
+    "examples": "make examples"
+  },
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-map2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "dependencies": {
+    "@stdlib/array-base-arraylike2object": "^0.0.x",
+    "@stdlib/array-base-zeros": "^0.0.x",
+    "@stdlib/assert-is-array-like-object": "^0.0.x",
+    "@stdlib/assert-is-function": "^0.0.x",
+    "@stdlib/assert-is-ndarray-like": "^0.0.x",
+    "@stdlib/ndarray-base-broadcast-array": "^0.0.x",
+    "@stdlib/ndarray-base-broadcast-shapes": "^0.0.x",
+    "@stdlib/ndarray-base-ndarraylike2object": "^0.0.x",
+    "@stdlib/ndarray-base-vind2bind": "^0.0.x",
+    "@stdlib/ndarray-zeros": "^0.0.x",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x"
+  },
+  "devDependencies": {
+    "@stdlib/array-filled-by": "^0.0.x",
+    "@stdlib/math-base-ops-add": "^0.0.x",
+    "@stdlib/ndarray-array": "^0.0.x",
+    "@stdlib/random-base-discrete-uniform": "^0.0.x",
+    "@stdlib/utils-nary-function": "^0.0.x"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">2.7.0"
+  },
+  "os": [
+    "aix",
+    "darwin",
+    "freebsd",
+    "linux",
+    "macos",
+    "openbsd",
+    "sunos",
+    "win32",
+    "windows"
+  ],
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "map",
+    "array",
+    "ndarray",
+    "tensor",
+    "matrix",
+    "vector",
+    "elementwise",
+    "element-wise",
+    "transform",
+    "invoke",
+    "call",
+    "apply",
+    "function",
+    "fun",
+    "func",
+    "fcn",
+    "binary"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
