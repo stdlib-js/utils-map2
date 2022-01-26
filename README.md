@@ -20,7 +20,7 @@ limitations under the License.
 
 # map2
 
-[![NPM version][npm-image]][npm-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Apply a function to elements in two input arrays and assign the results to an output array.
 
@@ -125,7 +125,7 @@ var cnt = ctx.count;
 
 <a name="method-map2-assign"></a>
 
-#### map2.assign( x, y, z, fcn\[, thisArg] )
+#### map2.assign( x, y, out, fcn\[, thisArg] )
 
 Applies a function to elements in two input arrays and assigns the results to an output array `z`.
 
