@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-map2",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Apply a function to elements in two input arrays and assign the results to an output array.",
   "license": "Apache-2.0",
   "author": {
