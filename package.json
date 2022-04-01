@@ -1,0 +1,46 @@
+{
+  "name": "@stdlib/utils-map2",
+  "version": "0.0.0",
+  "description": "Apply a function to elements in two input arrays and assign the results to an output array.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-map2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "map",
+    "array",
+    "ndarray",
+    "tensor",
+    "matrix",
+    "vector",
+    "elementwise",
+    "element-wise",
+    "transform",
+    "invoke",
+    "call",
+    "apply",
+    "function",
+    "fun",
+    "func",
+    "fcn",
+    "binary"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
