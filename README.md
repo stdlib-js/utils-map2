@@ -45,32 +45,20 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-map2
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var map2 = require( '@stdlib/utils-map2' );
+import map2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2@deno/mod.js';
 ```
 
 <a name="fcn-map2"></a>
@@ -80,8 +68,8 @@ var map2 = require( '@stdlib/utils-map2' );
 Applies a function to elements in two input arrays and assigns the results to a new array.
 
 ```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/number-float64-base-add' );
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add@deno/mod.js';
 
 var x = [ 1, 2, 3, 4, 5, 6 ];
 var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -93,9 +81,9 @@ var out = map2( x, y, naryFunction( add, 2 ) );
 The function accepts both array-like objects and [`ndarray`][@stdlib/ndarray/ctor]-like objects.
 
 ```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/number-float64-base-add' );
-var array = require( '@stdlib/ndarray-array' );
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add@deno/mod.js';
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 var opts = {
     'dtype': 'generic'
@@ -122,7 +110,7 @@ To set the `this` context when invoking the input function, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var add = require( '@stdlib/number-float64-base-add' );
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add@deno/mod.js';
 
 function fcn( v1, v2 ) {
     this.count += 1;
@@ -150,8 +138,8 @@ var cnt = ctx.count;
 Applies a function to elements in two input arrays and assigns the results to an output array `out`.
 
 ```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/number-float64-base-add' );
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add@deno/mod.js';
 
 var x = [ 1, 2, 3, 4, 5, 6 ];
 var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -166,9 +154,9 @@ console.log( out );
 The method accepts both array-like objects and [`ndarray`][@stdlib/ndarray/ctor]-like objects.
 
 ```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/number-float64-base-add' );
-var array = require( '@stdlib/ndarray-array' );
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add@deno/mod.js';
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 var opts = {
     'dtype': 'generic',
@@ -189,9 +177,9 @@ Input and output arrays must be either all array-like objects or all [`ndarray`]
 If input and output arrays are [`ndarray`][@stdlib/ndarray/ctor]-like objects, the arrays **must** be [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes]. To map from one or more input [`ndarrays`][@stdlib/ndarray/ctor] to an output [`ndarray`][@stdlib/ndarray/ctor] which has the same rank (i.e., dimensionality) and the same number of elements, but which is not [broadcast compatible][@stdlib/ndarray/base/broadcast-shapes], reshape the arrays prior to invocation.
 
 ```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/number-float64-base-add' );
-var array = require( '@stdlib/ndarray-array' );
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add@deno/mod.js';
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
 
 var opts = {
     'dtype': 'generic',
@@ -236,12 +224,12 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
 -   Both [`map2`](#fcn-map2) and [`map2.assign`](#method-map2-assign) accept array-like objects exposing getters and setters for array element access (e.g., [`Complex64Array`][@stdlib/array/complex64], [`Complex128Array`][@stdlib/array/complex128], etc).
 
     ```javascript
-    var naryFunction = require( '@stdlib/utils-nary-function' );
-    var Complex64Array = require( '@stdlib/array-complex64' );
-    var Complex64 = require( '@stdlib/complex-float32-ctor' );
-    var realf = require( '@stdlib/complex-float32-real' );
-    var imagf = require( '@stdlib/complex-float32-imag' );
-    var add = require( '@stdlib/complex-float32-base-add' );
+    import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
+    import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@deno/mod.js';
+    import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@deno/mod.js';
+    import realf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-real@deno/mod.js';
+    import imagf from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-imag@deno/mod.js';
+    import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-base-add@deno/mod.js';
 
     var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
     var y = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
@@ -275,12 +263,12 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var add = require( '@stdlib/number-float64-base-add' );
-var array = require( '@stdlib/ndarray-array' );
-var map2 = require( '@stdlib/utils-map2' );
+import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@deno/mod.js';
+var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
+import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add@deno/mod.js';
+import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
+import map2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2@deno/mod.js';
 
 function fill( i ) {
     var rand = discreteUniform( -10*(i+1), 10*(i+1) );
@@ -346,7 +334,7 @@ console.log( z.data );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -409,21 +397,21 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-map2/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
 
-[@stdlib/ndarray/base/binary]: https://github.com/stdlib-js/ndarray-base-binary
+[@stdlib/ndarray/base/binary]: https://github.com/stdlib-js/ndarray-base-binary/tree/deno
 
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes/tree/deno
 
-[@stdlib/ndarray/base/assert/is-contiguous]: https://github.com/stdlib-js/ndarray-base-assert-is-contiguous
+[@stdlib/ndarray/base/assert/is-contiguous]: https://github.com/stdlib-js/ndarray-base-assert-is-contiguous/tree/deno
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64/tree/deno
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map]: https://github.com/stdlib-js/utils-map
+[@stdlib/utils/map]: https://github.com/stdlib-js/utils-map/tree/deno
 
 <!-- </related-links> -->
 
