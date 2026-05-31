@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-20)
+## Unreleased (2026-05-31)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`1c95150`](https://github.com/stdlib-js/stdlib/commit/1c9515034550374b8759dcaf681c6cbc99d47030) - **docs:** fix errors and inconsistencies in `@stdlib/utils` TypeScript declarations [(#12391)](https:-/github.com/stdlib-js/stdlib/pull/12391) _(by Philipp Burckhardt, Athan Reines)_
 -   [`a11d11e`](https://github.com/stdlib-js/stdlib/commit/a11d11e3f1fa65b7ccebccb76884c8123f8a1ed0) - **docs:** improve doctests for complex number typed arrays in `utils` [(#12028)](https://github.com/stdlib-js/stdlib/pull/12028) _(by Karan Anand)_
 -   [`19216fd`](https://github.com/stdlib-js/stdlib/commit/19216fd118234a4dd38792e9e1d8f982617a5795) - **bench:** refactor to use string interpolation in `utils` [(#11409)](https://github.com/stdlib-js/stdlib/pull/11409) _(by Karan Anand, Athan Reines)_
 
@@ -25,10 +26,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karan Anand
+-   Philipp Burckhardt
 
 </section>
 
